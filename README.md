@@ -40,7 +40,7 @@ Analyzed 540k transactions for a UK gift retailer. Handled EDA, Pareto analysis,
 
 ## Skills
 
-**Languages:** Python · SQL · C# · Pine Script  
+**Languages:** Python · SQL · C# · Pine Script · R 
 
 **Data:** Pandas · Matplotlib · Seaborn · EDA · Statistical Analysis · Geospatial Analysis (Folium/Geopy)
 
