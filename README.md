@@ -8,11 +8,11 @@ Linguistics graduate from Boğaziçi University, currently working as an AI/LLM 
 Mean-reversion Expert Advisor for MetaTrader 5 built on EWM band strategy. Developed from a Python backtest into a production-ready MT5 EA across 18 versions, with RSI/ATR/slope signal filters, Optuna-based parameter optimization, and ML training data generated from live trade logs.
 `Python` `MQL5` `Optuna`
 
-### [İzmir Acil — Hyperlocal Emergency Service Finder](https://izmir-acil.streamlit.app/)
+### [İzmir Acil — Hyperlocal Emergency Service Finder · Live Website](https://izmir-acil.streamlit.app/)
 Hyperlocal web application providing real-time access to 4,600+ verified emergency service providers in İzmir. Features an automated "Open Now" engine that parses dynamic weekly operating hours against local time, browser-based GPS for proximity-based sorting, and an interactive Folium geospatial interface. Engineered a mobile-optimized UX with collapsible mapping and integrated direct-action triggers for WhatsApp, telephony, and Google Maps navigation.
 `Python` `Streamlit` `SQLite` `Folium` `Geopy`
 
-### [ALES Oracle — AI Exam Prep Tool](https://ales-oracle.streamlit.app/#ales-oracle)
+### [ALES Oracle — AI Exam Prep Tool · Live Website](https://ales-oracle.streamlit.app/#ales-oracle)
 Topic-based question generator for the Turkish ALES graduate entrance exam. Analyzes a database of 1,400+ real exam questions across 13 sittings to generate difficulty-calibrated practice questions and step-by-step solutions using Gemini 2.5 Flash. Features a per-topic formula card system built from frequency analysis of real exam data.
 `Python` `Streamlit` `Gemini 2.5 Flash` `Pandas`
 
