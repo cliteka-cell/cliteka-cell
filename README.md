@@ -34,6 +34,7 @@ Fine-tuned DistilBERT on WikiANN English (20k sentences) for named entity recogn
 
 **Languages:** Python · SQL · C# · Pine Script  
 **Data:** Pandas · Matplotlib · Seaborn · EDA · Statistical Analysis · Geospatial Analysis (Folium/Geopy)
+
 **ML:** Scikit-learn · XGBoost · Feature Engineering · Model Evaluation · Fine-tuning Transformers (HuggingFace) · NER · Token Classification  
 **Finance:** Algorithmic Trading · Backtesting · Order Flow · MetaTrader 5  
 **Other:** NLP · LLM Evaluation · Intermediate Excel · Web App Deployment (Streamlit) · Web Scraping
