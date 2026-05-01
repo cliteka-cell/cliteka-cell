@@ -24,12 +24,16 @@ End-to-end analysis of 540k transactions from a UK wholesale gift retailer. Cove
 Regression project on the Ames Housing Dataset comparing Linear Regression, Ridge, Random Forest, and XGBoost. Includes feature engineering (TotalSF, TotalBaths, HouseAge), log target transformation, and cross-validated evaluation. XGBoost achieved R²=0.944 and RMSE=$21,224.
 `Python` `Scikit-learn` `XGBoost`
 
+### [Named Entity Recognition with DistilBERT](https://github.com/cliteka-cell/ner-wikiann) · [Live Demo](https://huggingface.co/spaces/Reshiman/ner-wikiann)
+Fine-tuned DistilBERT on WikiANN English (20k sentences) for named entity recognition. Achieved F1=0.82 across PER, ORG, and LOC entity types. Includes linguistic error analysis covering subword tokenization artifacts, annotation ambiguity, domain mismatch, and class imbalance. Deployed as an interactive demo on HuggingFace Spaces.
+`Python` `HuggingFace` `DistilBERT` `PyTorch` `Gradio`
+
 ---
 
 ## Skills
 
 **Languages:** Python · SQL · C# · Pine Script  
 **Data:** Pandas · Matplotlib · Seaborn · EDA · Statistical Analysis · Geospatial Analysis (Folium/Geopy)
-**ML:** Scikit-learn · XGBoost · Feature Engineering · Model Evaluation  
+**ML:** Scikit-learn · XGBoost · Feature Engineering · Model Evaluation · Fine-tuning Transformers (HuggingFace) · NER · Token Classification  
 **Finance:** Algorithmic Trading · Backtesting · Order Flow · MetaTrader 5  
-**Other:** NLP · LLM Evaluation · Advanced Excel · Web App Deployment (Streamlit) · Web Scraping
+**Other:** NLP · LLM Evaluation · Intermediate Excel · Web App Deployment (Streamlit) · Web Scraping
