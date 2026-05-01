@@ -8,6 +8,10 @@ Linguistics graduate from Boğaziçi University, currently working as an AI/LLM 
 Fine-tuned DistilBERT on WikiANN English (20k sentences) for named entity recognition. Achieved F1=0.82 across PER, ORG, and LOC entity types. Conducted full error analysis on 80k test tokens — identified that 74% of errors are misclassifications rather than missed detections, with LOC↔ORG confusion (1,279 cases) as the dominant failure mode driven by geopolitical ambiguity. Discovered cases where model predictions are more linguistically defensible than the ground truth labels, revealing annotation inconsistencies in the dataset. Deployed as an interactive demo on HuggingFace Spaces.
 `Python` `HuggingFace` `DistilBERT` `PyTorch` `Gradio`
 
+### [Stance Detection with DistilBERT](https://github.com/cliteka-cell/stance-detection) · [Live Demo](https://huggingface.co/spaces/Reshiman/stance-detection)
+Fine-tuned DistilBERT on the IBM Argument Quality dataset (30k arguments) to classify whether an argument is PRO or CON on a given debate topic. Achieved F1=0.90 on a perfectly balanced dataset. Includes linguistic analysis of stance ambiguity, confidence calibration, and the pragmatic nature of argumentative language.
+`Python` `HuggingFace` `DistilBERT` `PyTorch` `Gradio`
+
 ### [ALES Oracle — AI Exam Prep Tool · Click for Live Website](https://ales-oracle.streamlit.app/#ales-oracle)
 Topic-based question generator for the Turkish ALES graduate entrance exam. Analyzes a database of 1,400+ real exam questions across 13 sittings to generate difficulty-calibrated practice questions and step-by-step solutions using Gemini 2.5 Flash and Gemini 3.0. Features a per-topic formula card system built from frequency analysis of real exam data.
 `Python` `Streamlit` `Gemini 2.5 Flash` `Pandas`
