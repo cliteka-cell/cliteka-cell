@@ -16,15 +16,15 @@ Fine-tuned DistilBERT on the IBM Argument Quality dataset (30k arguments) to cla
 Cross-lingual transfer experiment testing an English sentiment model on Turkish — scored 41.7% accuracy (worse than random). Fine-tuned mBERT on 4,486 Turkish restaurant reviews, recovering to 84.4% accuracy (+42.6% gain). Includes analysis of Turkish morphology, tokenization failure modes, and within-language domain mismatch.
 `Python` `HuggingFace` `mBERT` `PyTorch` `Gradio` `Turkish NLP`
 
-### [ALES Oracle — AI Exam Prep Tool · Click for Live Website](https://ales-oracle.streamlit.app/#ales-oracle)
+### [ALES Oracle: AI Exam Prep Tool · Click for Live Website](https://ales-oracle.streamlit.app/#ales-oracle)
 Topic-based question generator for the Turkish ALES exam. It pulls from a database of 1,400+ real past questions to generate practice questions and step-by-step solutions using Gemini 2.5 Flash and Gemini 3.0. Also includes study formula cards based on the most common question types in past exams.
 `Python` `Streamlit` `Gemini 2.5 Flash` `Pandas`
 
-### [ARMAS — Algorithmic S&P EA](https://github.com/cliteka-cell/ARMAS_Project_Full)
+### [ARMAS: Algorithmic S&P EA](https://github.com/cliteka-cell/ARMAS_Project_Full)
 Mean-reversion algorithmic trading bot for MetaTrader 5 using an EWM band strategy. Took it from a basic Python backtest to a live MT5 Expert Advisor over 18 versions. Uses RSI, ATR, and slope filters, along with Optuna for parameter tuning and ML training data generated from live trades.
 `Python` `MQL5` `Optuna`
 
-### [İzmir Acil — Emergency Service Finder · Click for Live Website](https://izmir-acil.streamlit.app/)
+### [İzmir Acil: Emergency Service Finder · Click for Live Website](https://izmir-acil.streamlit.app/)
 A web app that helps people find over 4,600 verified emergency services in İzmir. Uses an "Open Now" feature that checks current local time against store hours, and sorts results by distance using browser GPS. Built a mobile-friendly map interface with quick buttons for WhatsApp, calling, and Google Maps directions.
 `Python` `Streamlit` `SQLite` `Folium` `Geopy`
 
