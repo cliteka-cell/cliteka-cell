@@ -9,7 +9,7 @@ Fine-tuned DistilBERT on WikiANN English (20k sentences) for named entity recogn
 `Python` `HuggingFace` `DistilBERT` `PyTorch` `Gradio`
 
 ### [ALES Oracle — AI Exam Prep Tool · Click for Live Website](https://ales-oracle.streamlit.app/#ales-oracle)
-Topic-based question generator for the Turkish ALES graduate entrance exam. Analyzes a database of 1,400+ real exam questions across 13 sittings to generate difficulty-calibrated practice questions and step-by-step solutions using Gemini 2.5 Flash. Features a per-topic formula card system built from frequency analysis of real exam data.
+Topic-based question generator for the Turkish ALES graduate entrance exam. Analyzes a database of 1,400+ real exam questions across 13 sittings to generate difficulty-calibrated practice questions and step-by-step solutions using Gemini 2.5 Flash and Gemini 3.0. Features a per-topic formula card system built from frequency analysis of real exam data.
 `Python` `Streamlit` `Gemini 2.5 Flash` `Pandas`
 
 ### [ARMAS — Algorithmic S&P EA](https://github.com/cliteka-cell/ARMAS_Project_Full)
