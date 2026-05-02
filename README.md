@@ -12,7 +12,7 @@ Fine-tuned DistilBERT on WikiANN English (20k sentences) for named entity recogn
 Fine-tuned DistilBERT on the IBM Argument Quality dataset (30k arguments) to classify debate arguments as PRO or CON. Reached an F1 score of 0.90 on a perfectly balanced dataset. The project also looks into stance ambiguity and how the model handles tricky argumentative language.
 `Python` `HuggingFace` `DistilBERT` `PyTorch` `Gradio`
 
-### [Cross-Lingual Transfer: Turkish Sentiment Analysis](https://github.com/cliteka-cell/turkish-sentiment-crosslingual) · [Live Demo](https://huggingface.co/spaces/Reshiman/turkish-sentiment-mbert)
+### [Cross-Lingual Transfer: Turkish Sentiment Analysis](https://github.com/cliteka-cell/turkish-sentiment-mbert) · [Live Demo](https://huggingface.co/spaces/Reshiman/turkish-sentiment-mbert)
 Cross-lingual transfer experiment testing an English sentiment model on Turkish — scored 41.7% accuracy (worse than random). Fine-tuned mBERT on 4,486 Turkish restaurant reviews, recovering to 84.4% accuracy (+42.6% gain). Includes analysis of Turkish morphology, tokenization failure modes, and within-language domain mismatch.
 `Python` `HuggingFace` `mBERT` `PyTorch` `Gradio` `Turkish NLP`
 
