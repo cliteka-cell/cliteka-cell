@@ -12,9 +12,9 @@ Fine-tuned DistilBERT on WikiANN English (20k sentences) for named entity recogn
 Fine-tuned DistilBERT on the IBM Argument Quality dataset (30k arguments) to classify debate arguments as PRO or CON. Reached an F1 score of 0.90 on a perfectly balanced dataset. The project also looks into stance ambiguity and how the model handles tricky argumentative language.
 `Python` `HuggingFace` `DistilBERT` `PyTorch` `Gradio`
 
-### [Cross-Lingual Transfer: Turkish Sentiment Analysis](https://github.com/cliteka-cell/turkish-sentiment-mbert) · [Live Demo](https://huggingface.co/spaces/Reshiman/turkish-sentiment-mbert)
-Cross-lingual transfer experiment testing an English sentiment model on Turkish — scored 41.7% accuracy (worse than random). Fine-tuned mBERT on 4,486 Turkish restaurant reviews, recovering to 84.4% accuracy (+42.6% gain). Includes analysis of Turkish morphology, tokenization failure modes, and within-language domain mismatch.
-`Python` `HuggingFace` `mBERT` `PyTorch` `Gradio` `Turkish NLP`
+### [Turkish NLP Benchmark](https://github.com/cliteka-cell/turkish-nlp-benchmark) · [Live Demo](https://huggingface.co/spaces/Reshiman/turkish-nlp-benchmark)
+Three-way benchmark comparing English DistilBERT (zero-shot), mBERT (multilingual), and BERTurk (Turkish-only) on Turkish sentiment analysis. Zero-shot scored 41.7% (worse than random), mBERT recovered to 84.4%, BERTurk reached 94.3% — a +9.95% gain over multilingual on identical training. Interactive demo lets users test all three models in real time.
+`Python` `HuggingFace` `mBERT` `BERTurk` `PyTorch` `Gradio` `Turkish NLP`
 
 ### [ALES Oracle: AI Exam Prep Tool · Click for Live Website](https://ales-oracle.streamlit.app/#ales-oracle)
 Topic-based question generator for the Turkish ALES exam. It pulls from a database of 1,400+ real past questions to generate practice questions and step-by-step solutions using Gemini 2.5 Flash and Gemini 3.0. Also includes study formula cards based on the most common question types in past exams.
