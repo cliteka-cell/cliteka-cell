@@ -24,6 +24,10 @@ Topic-based question generator for the Turkish ALES exam. It pulls from a databa
 Mean-reversion algorithmic trading bot for MetaTrader 5 using an EWM band strategy. Took it from a basic Python backtest to a live MT5 Expert Advisor over 18 versions. Uses RSI, ATR, and slope filters, along with Optuna for parameter tuning and ML training data generated from live trades.
 `Python` `MQL5` `Optuna`
 
+### [ARMAS RL Trading Agent](https://github.com/cliteka-cell/armas-rl)
+Reinforcement learning agent for the ARMAS mean-reversion strategy on SP500 futures (1H). Built a hybrid architecture where MaskablePPO learns trade timing while a deterministic state machine handles position scaling, stops, and partial take-profits. Iterated through six reward designs to escape degenerate policies (buy-only, every-step churn, never-trade), then ran a signal-vs-friction analysis: l1 touch yields only +0.056% expected return over 60 bars while strategy commission cost is ~0.2% per trade. Documented as a negative result — the edge is real but smaller than the transaction friction. Key takeaway: signal analysis must precede model tuning.
+`Python` `gymnasium` `stable-baselines3` `MaskablePPO` `Pine Script`
+
 ### [İzmir Acil: Emergency Service Finder · Click for Live Website](https://izmir-acil.streamlit.app/)
 A web app that helps people find over 4,600 verified emergency services in İzmir. Uses an "Open Now" feature that checks current local time against store hours, and sorts results by distance using browser GPS. Built a mobile-friendly map interface with quick buttons for WhatsApp, calling, and Google Maps directions.
 `Python` `Streamlit` `SQLite` `Folium` `Geopy`
@@ -44,7 +48,7 @@ Analyzed 540k transactions for a UK gift retailer. Handled EDA, Pareto analysis,
 
 **Data:** Pandas · Matplotlib · Seaborn · EDA · Statistical Analysis · Geospatial Analysis (Folium/Geopy)
 
-**ML:** Scikit-learn · XGBoost · Feature Engineering · Model Evaluation · Fine-tuning Transformers (HuggingFace) · NER · Token Classification
+**ML:** Scikit-learn · XGBoost · Feature Engineering · Model Evaluation · Fine-tuning Transformers (HuggingFace) · NER · Token Classification · Reinforcement Learning (PPO)
 
 **Finance:** Algorithmic Trading · Backtesting · Order Flow · MetaTrader 5  
 
