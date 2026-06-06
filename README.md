@@ -34,6 +34,18 @@ Reinforcement learning agent for the ARMAS mean-reversion strategy on SP500 futu
 Professional TradingView indicator suite for confluence zone detection. Auto-detects the trading mode (intraday / hourly / macro) and loads the relevant levels — ARMAS adaptive bands, VWAP, FVGs, market profile, open interest signal matrix, CVD divergence, and session tracking. A scoring engine ranks zones by confluence strength. Comes with a full marketing site built from scratch with a galaxy canvas background, animated hero, and custom Pleiades SVG logo.
 `Pine Script v6` `TradingView` `HTML` `CSS` `JavaScript` `Canvas API` `SVG`
 
+### [Naked POC — Daily](https://github.com/cliteka-cell/npoc-daily)
+Open-source TradingView indicator that tracks unvisited daily Points of Control as clean dashed levels. No histogram, no boxes — only the levels that still have magnetic pull on price. Uses a close-weighted triangular volume distribution so the POC lands closer to where price repeatedly settled. Auto-removes filled levels and expires old ones.
+`Pine Script v6` `TradingView` `Volume Profile` `Market Profile`
+
+### [Session CVD Divergence](https://github.com/cliteka-cell/session-cvd-divergence)
+Splits Cumulative Volume Delta into independent Asian, London, and NY session streams, each resetting at session open. Detects all four divergence types (regular and hidden) between price and order flow using a same-session pivot constraint to prevent false cross-session signals. Draws lines between the exact pivot pairs that form each signal on both the CVD pane and the main price chart.
+`Pine Script v6` `TradingView` `CVD` `Order Flow` `Volume Delta`
+
+### [Auto Anchored VP — True TPO Logic](https://github.com/cliteka-cell/auto-anchored-vp)
+Open-source Pine Script replication of TradingView's native Anchored Volume Profile. Uses even TPO distribution across each bar's high-low range and the standard dual-bin Value Area expansion algorithm matching original Steidlmayer methodology. Published as an educational reference for why accurate volume profile calculation is difficult in Pine Script and how close bar-level approximation can get.
+`Pine Script v6` `TradingView` `Volume Profile` `TPO` `Value Area`
+
 ### [Trading Journal · Live Preview](https://trading-journal-preview.streamlit.app)
 Full-featured trading journal built with Python and Streamlit. Multi-journal support, MT5 report import, pre/post/position analysis with screenshot upload, equity curve, calendar heatmap, analytics by session/hour/day, Hall of Fame, and PDF export. Used in real daily trading.
 `Python` `Streamlit` `Pandas` `Plotly` `fpdf`
@@ -62,6 +74,6 @@ Analyzed 540k transactions for a UK gift retailer. Handled EDA, Pareto analysis,
 
 **Web:** Canvas API · SVG · Streamlit · Gradio · GitHub Pages
 
-**Finance:** Algorithmic Trading · Backtesting · Order Flow · MetaTrader 5 · TradingView
+**Finance:** Algorithmic Trading · Backtesting · Order Flow · Volume Profile · CVD · Market Profile · MetaTrader 5 · TradingView
 
 **Other:** NLP · Intermediate Excel · Web Scraping
