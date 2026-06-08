@@ -7,7 +7,7 @@ Linguistics graduate from Boğaziçi University, currently working as an AI/LLM 
 ## Projects
 
 ### [Named Entity Recognition with DistilBERT](https://github.com/cliteka-cell/ner-wikiann) · [Live Demo](https://huggingface.co/spaces/Reshiman/ner-wikiann)
-Fine-tuned DistilBERT on WikiANN English (20k sentences) for named entity recognition. Reached an F1 score of 0.82 across PER, ORG, and LOC entities. Manually checked 80k test tokens for errors and found that 74% were misclassifications rather than missed detections—mostly confusing LOC and ORG because of ambiguous names. Also noticed that some model predictions actually made more sense than the original dataset labels. Deployed as an interactive HuggingFace Space.
+Fine-tuned DistilBERT on WikiANN English (20k sentences) for named entity recognition. Reached an F1 score of 0.82 across PER, ORG, and LOC entities. Manually checked 80k test tokens for errors and found that 74% were misclassifications rather than missed detections-mostly confusing LOC and ORG because of ambiguous names. Also noticed that some model predictions actually made more sense than the original dataset labels. Deployed as an interactive HuggingFace Space.
 `Python` `HuggingFace` `DistilBERT` `PyTorch` `Gradio`
 
 ### [Stance Detection with DistilBERT](https://github.com/cliteka-cell/stance-detection) · [Live Demo](https://huggingface.co/spaces/Reshiman/stance-detection)
@@ -15,7 +15,7 @@ Fine-tuned DistilBERT on the IBM Argument Quality dataset (30k arguments) to cla
 `Python` `HuggingFace` `DistilBERT` `PyTorch` `Gradio`
 
 ### [Turkish NLP Benchmark](https://github.com/cliteka-cell/turkish-nlp-benchmark) · [Live Demo](https://huggingface.co/spaces/Reshiman/turkish-nlp-benchmark)
-Three-way benchmark comparing English DistilBERT (zero-shot), mBERT (multilingual), and BERTurk (Turkish-only) on Turkish sentiment analysis. Zero-shot scored 41.7% (worse than random), mBERT recovered to 84.4%, BERTurk reached 94.3% — a +9.95% gain over multilingual on identical training. Interactive demo lets users test all three models in real time.
+Three-way benchmark comparing English DistilBERT (zero-shot), mBERT (multilingual), and BERTurk (Turkish-only) on Turkish sentiment analysis. Zero-shot scored 41.7% (worse than random), mBERT recovered to 84.4%, BERTurk reached 94.3% - a +9.95% gain over multilingual on identical training. Interactive demo lets users test all three models in real time.
 `Python` `HuggingFace` `mBERT` `BERTurk` `PyTorch` `Gradio` `Turkish NLP`
 
 ### [ALES Oracle: AI Exam Prep Tool · Click for Live Website](https://ales-oracle.streamlit.app/#ales-oracle)
@@ -31,28 +31,32 @@ Reinforcement learning agent for the ARMAS mean-reversion strategy on SP500 futu
 `Python` `gymnasium` `stable-baselines3` `MaskablePPO` `Pine Script`
 
 ### [Confluence Array · Click for Live Website](https://confluencearray.com)
-Professional TradingView indicator suite for confluence zone detection. Auto-detects the trading mode (intraday / hourly / macro) and loads the relevant levels — ARMAS adaptive bands, VWAP, FVGs, market profile, open interest signal matrix, CVD divergence, and session tracking. A scoring engine ranks zones by confluence strength.
+Professional TradingView indicator suite for confluence zone detection. Auto-detects the trading mode (intraday / hourly / macro) and loads the relevant levels - ARMAS adaptive bands, VWAP, FVGs, market profile, open interest signal matrix, CVD divergence, and session tracking. A scoring engine ranks zones by confluence strength.
 `Pine Script v6` `TradingView` `HTML` `CSS` `JavaScript` `Canvas API` `SVG`
 
 ### TMSCA: Market Structure Confluence Array · Commercial (in development)
 Fuses the Confluence Array level engine with a market-structure event engine in one overlay, so that where the levels sit and when a setup fires gate each other. BOS / CHoCH, liquidity sweeps, SFP, and session-CVD divergence are scored and graded A- / A / A+, then filtered by a context gate built from zone bias, ARMAS stretch, and multi-timeframe alignment.
 `Pine Script v6` `TradingView` `Smart Money Concepts` `Order Flow` `CVD`
 
-### [Naked POC — Daily](https://github.com/cliteka-cell/npoc-daily)
-Open-source TradingView indicator that tracks unvisited daily Points of Control as clean dashed levels. No histogram, no boxes — only the levels that still have magnetic pull on price. Uses a close-weighted triangular volume distribution so the POC lands closer to where price repeatedly settled. Auto-removes filled levels and expires old ones.
+### [Naked POC - Daily](https://github.com/cliteka-cell/npoc-daily)
+Open-source TradingView indicator that tracks unvisited daily Points of Control as clean dashed levels. No histogram, no boxes - only the levels that still have magnetic pull on price. Uses a close-weighted triangular volume distribution so the POC lands closer to where price repeatedly settled. Auto-removes filled levels and expires old ones.
 `Pine Script v6` `TradingView` `Volume Profile` `Market Profile`
 
 ### [Session CVD Divergence](https://github.com/cliteka-cell/session-cvd-divergence)
 Splits Cumulative Volume Delta into independent Asian, London, and NY session streams, each resetting at session open. Detects all four divergence types (regular and hidden) between price and order flow using a same-session pivot constraint to prevent false cross-session signals. Two-script setup: CVD pane with divergence lines, plus an overlay that draws matching price pivot lines and labels on the main chart.
 `Pine Script v6` `TradingView` `CVD` `Order Flow` `Volume Delta`
 
-### [Auto Anchored VP — True TPO Logic](https://github.com/cliteka-cell/auto-anchored-vp)
+### [Auto Anchored VP - True TPO Logic](https://github.com/cliteka-cell/auto-anchored-vp)
 Open-source Pine Script replication of TradingView's native Anchored Volume Profile. Uses even TPO distribution across each bar's high-low range and the standard dual-bin Value Area expansion algorithm matching original Steidlmayer methodology. Published as an educational reference for understanding why accurate volume profile calculation is difficult in Pine Script.
 `Pine Script v6` `TradingView` `Volume Profile` `TPO` `Value Area`
 
 ### [SFP Detector](https://github.com/cliteka-cell/sfp-detector)
-Detects swing failure patterns — bars that wick past a prior swing high or low and close back inside it, sweeping the liquidity at that level. Features multi-level sweep detection (SFP / SFP+ / SFP++), ATR-based quality filters, auto pivot length by timeframe, HTF trend filter, session window filter, and retest tracking after each signal.
+Detects swing failure patterns - bars that wick past a prior swing high or low and close back inside it, sweeping the liquidity at that level. Features multi-level sweep detection (SFP / SFP+ / SFP++), ATR-based quality filters, auto pivot length by timeframe, HTF trend filter, session window filter, and retest tracking after each signal.
 `Pine Script v6` `TradingView` `Liquidity` `Price Action` `Order Flow`
+
+### [Market Structure (BOS/CHoCH)](https://github.com/cliteka-cell/market-structure) · [TradingView](https://www.tradingview.com/script/0t7puDyH-Market-Structure-BOS-CHOCH-Advanced-Improved/)
+Maps market structure as Break of Structure (continuation) and Change of Character (reversal) from a single break engine and trend state, across two layers: a bold swing skeleton with HH/HL/LH/LL and trailing levels, plus a faded internal layer for the legs inside each swing. Unbroken swing highs and lows project as liquidity pools that clear the moment price wicks through them.
+`Pine Script v6` `TradingView` `Market Structure` `Liquidity` `Price Action`
 
 ### [Trading Journal · Live Preview](https://trading-journal-preview.streamlit.app)
 Full-featured trading journal built with Python and Streamlit. Multi-journal support, MT5 report import, pre/post/position analysis with screenshot upload, equity curve, calendar heatmap, analytics by session/hour/day, Hall of Fame, and PDF export. Used in real daily trading.
