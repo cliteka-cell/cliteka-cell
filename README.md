@@ -34,6 +34,10 @@ Reinforcement learning agent for the ARMAS mean-reversion strategy on SP500 futu
 Professional TradingView indicator suite for confluence zone detection. Auto-detects the trading mode (intraday / hourly / macro) and loads the relevant levels — ARMAS adaptive bands, VWAP, FVGs, market profile, open interest signal matrix, CVD divergence, and session tracking. A scoring engine ranks zones by confluence strength.
 `Pine Script v6` `TradingView` `HTML` `CSS` `JavaScript` `Canvas API` `SVG`
 
+### TMSCA: Market Structure Confluence Array · Commercial (in development)
+Fuses the Confluence Array level engine with a market-structure event engine in one overlay, so that where the levels sit and when a setup fires gate each other. BOS / CHoCH, liquidity sweeps, SFP, and session-CVD divergence are scored and graded A- / A / A+, then filtered by a context gate built from zone bias, ARMAS stretch, and multi-timeframe alignment.
+`Pine Script v6` `TradingView` `Smart Money Concepts` `Order Flow` `CVD`
+
 ### [Naked POC — Daily](https://github.com/cliteka-cell/npoc-daily)
 Open-source TradingView indicator that tracks unvisited daily Points of Control as clean dashed levels. No histogram, no boxes — only the levels that still have magnetic pull on price. Uses a close-weighted triangular volume distribution so the POC lands closer to where price repeatedly settled. Auto-removes filled levels and expires old ones.
 `Pine Script v6` `TradingView` `Volume Profile` `Market Profile`
