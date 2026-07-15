@@ -26,6 +26,10 @@ Three-way benchmark comparing English DistilBERT (zero-shot), mBERT (multilingua
 Topic-based question generator for the Turkish ALES exam. It pulls from a database of 1,400+ real past questions to generate practice questions and step-by-step solutions using Gemini 2.5 Flash and Gemini 3.0. Also includes study formula cards based on the most common question types in past exams.
 `Python` `Streamlit` `Gemini 2.5 Flash` `Pandas`
 
+### AI Investor: Local LLM Research System · Private
+Self-hosted investment research system running entirely on local hardware, no external LLM API. Research only by design: it never places a trade, and the broker API keys are deliberately left empty. A three-layer screener runs across large-cap, Russell 2000, and crypto tracks: a quantitative momentum pass with no LLM, then a tool-calling web-search gather (Qwen via a self-hosted SearXNG), then a deep thesis and pre-mortem pass (DeepSeek R1 32B). 18 scheduled jobs keep it running unattended, including a living paper portfolio with stop-loss exits, position caps and inverse-volatility sizing, thesis drift detection against each position's original thesis, and a data quality canary that validates the shape of every external API response rather than just its status code. The system grades itself: a calibration job measures forward returns per conviction tier against a track-appropriate passive benchmark (SPY / IWM / BTC), which is how it surfaced that its own high-conviction large-cap tier was trailing SPY by 3.1% alpha while the crypto medium tier beat BTC by 1.6%.
+`Python` `Ollama` `DeepSeek R1 32B` `Qwen` `Local LLM` `Docker` `SearXNG` `yfinance` `SEC EDGAR`
+
 ### [ARMAS: Algorithmic S&P EA](https://github.com/cliteka-cell/ARMAS_Project_Full)
 Mean-reversion algorithmic trading bot for MetaTrader 5 using an EWM band strategy. Took it from a basic Python backtest to a live MT5 Expert Advisor over 18 versions. Uses RSI, ATR, and slope filters, along with Optuna for parameter tuning and ML training data generated from live trades.
 `Python` `MQL5` `Optuna`
