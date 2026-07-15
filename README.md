@@ -6,6 +6,10 @@ Linguistics graduate from Boğaziçi University, currently working as an AI/LLM 
 
 ## Projects
 
+### [Zero-Shot Multilingual NER](https://github.com/cliteka-cell/zero-shot-multilingual-ner)
+Cross-lingual NER transfer to Turkish, German, and Arabic using no target-language labels at all. XLM-RoBERTa backbone with a contrastive alignment objective (InfoNCE on real OPUS-100 parallel sentences) plus CoSDA-ML code-switching augmentation via MUSE bilingual lexicons. Built as a full research study rather than a single run: a 5-config ablation, multi-seed variance runs, a translate-train baseline, a few-shot curve, and token and entity level alignment analyses. The ablation refutes the project's own thesis - plain full fine-tuning beats the contrastive pipeline on German (0.753 vs 0.744) and Arabic (0.495 vs 0.456), so the contrastive objective is reported as not helping rather than quietly dropped. A follow-up hypothesis about entity-type alignment was tested directly and also came back refuted. Written up in PAPER.md with a full development log.
+`Python` `PyTorch` `XLM-RoBERTa` `Contrastive Learning` `InfoNCE` `Zero-Shot Transfer` `seqeval`
+
 ### [Named Entity Recognition with DistilBERT](https://github.com/cliteka-cell/ner-wikiann) · [Live Demo](https://huggingface.co/spaces/Reshiman/ner-wikiann)
 Fine-tuned DistilBERT on WikiANN English (20k sentences) for named entity recognition. Reached an F1 score of 0.82 across PER, ORG, and LOC entities. Manually checked 80k test tokens for errors and found that 74% were misclassifications rather than missed detections-mostly confusing LOC and ORG because of ambiguous names. Also noticed that some model predictions actually made more sense than the original dataset labels. Deployed as an interactive HuggingFace Space.
 `Python` `HuggingFace` `DistilBERT` `PyTorch` `Gradio`
@@ -80,7 +84,9 @@ Analyzed 540k transactions for a UK gift retailer. Handled EDA, Pareto analysis,
 
 **Languages:** Python · SQL · JavaScript · HTML · CSS · C# · Pine Script v6 · R
 
-**ML & NLP:** Scikit-learn · XGBoost · Feature Engineering · Model Evaluation · Fine-tuning Transformers (HuggingFace) · NER · Token Classification · Reinforcement Learning (PPO) · LLM Evaluation
+**ML & NLP:** Scikit-learn · XGBoost · Feature Engineering · Model Evaluation · Fine-tuning Transformers (HuggingFace) · NER · Token Classification · Cross-lingual & Zero-Shot Transfer · Contrastive Learning (InfoNCE) · Ablation & Multi-Seed Study Design · Reinforcement Learning (PPO) · LLM Evaluation
+
+**LLM Engineering:** Local LLM Deployment (Ollama) · Prompt & Context Engineering · Structured Output · Retrieval & Web-Augmented Agents · Scheduled LLM Pipelines
 
 **Data:** Pandas · Matplotlib · Seaborn · EDA · Statistical Analysis · Geospatial Analysis (Folium/Geopy)
 
