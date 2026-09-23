@@ -26,8 +26,8 @@ Three-way benchmark comparing English DistilBERT (zero-shot), mBERT (multilingua
 Topic-based question generator for the Turkish ALES exam. It pulls from a database of 1,400+ real past questions to generate practice questions and step-by-step solutions using Gemini 2.5 Flash and Gemini 3.0. Also includes study formula cards based on the most common question types in past exams.
 `Python` `Streamlit` `Gemini 2.5 Flash` `Pandas`
 
-### AI Investor: Local LLM Research System · Private
-Self-hosted investment research system running entirely on local hardware, no external LLM API. Research only by design: it never places a trade, and the broker API keys are deliberately left empty. A three-layer screener runs across large-cap, Russell 2000, and crypto tracks: a quantitative momentum pass with no LLM, then a tool-calling web-search gather (Qwen via a self-hosted SearXNG), then a deep thesis and pre-mortem pass (DeepSeek R1 32B). 18 scheduled jobs keep it running unattended, including a living paper portfolio with stop-loss exits, position caps and inverse-volatility sizing, thesis drift detection against each position's original thesis, and a data quality canary that validates the shape of every external API response rather than just its status code. The system grades itself: a calibration job measures forward returns per conviction tier against a track-appropriate passive benchmark (SPY / IWM / BTC), which is how it surfaced that its own high-conviction large-cap tier was trailing SPY by 3.1% alpha while the crypto medium tier beat BTC by 1.6%.
+### [AI Investor: Local LLM Research System](https://cliteka-cell.github.io/ai-investor-dashboard/) · [Writeup](https://github.com/cliteka-cell/ai-investor-writeup)
+Self-hosted investment research system running entirely on local hardware, no external LLM API. Research only by design: it never places a trade, and the broker API keys are deliberately left empty. A three-layer screener runs across large-cap, Russell 2000, and crypto tracks: a quantitative momentum pass with no LLM, then a tool-calling web-search gather (Qwen via a self-hosted SearXNG), then a deep thesis and pre-mortem pass (DeepSeek R1 32B). 18 scheduled jobs keep it running unattended, including a living paper portfolio with stop-loss exits, position caps and inverse-volatility sizing, thesis drift detection against each position's original thesis, and a data quality canary that validates the shape of every external API response rather than just its status code. The system grades itself: a calibration job measures forward returns per conviction tier against a track-appropriate passive benchmark (SPY / IWM / BTC), which is how it surfaced that its own high-conviction large-cap tier was trailing SPY by 3.1% alpha while the crypto medium tier beat BTC by 1.6%. A public dashboard (linked above) republishes this same data daily: the briefing, macro regime, screener conviction tiers, and the calibration numbers themselves, unedited.
 `Python` `Ollama` `DeepSeek R1 32B` `Qwen` `Local LLM` `Docker` `SearXNG` `yfinance` `SEC EDGAR`
 
 ### [ARMAS: Algorithmic S&P EA](https://github.com/cliteka-cell/ARMAS_Project_Full)
@@ -70,6 +70,18 @@ Maps market structure as Break of Structure (continuation) and Change of Charact
 Full-featured trading journal built with Python and Streamlit. Multi-journal support, MT5 report import, pre/post/position analysis with screenshot upload, equity curve, calendar heatmap, analytics by session/hour/day, Hall of Fame, and PDF export. Used in real daily trading.
 `Python` `Streamlit` `Pandas` `Plotly` `fpdf`
 
+### Investing Journal: Buy-and-Hold Portfolio Tracker · Private
+The sibling app to Trading Journal, rebuilt around long-term holdings instead of in/out trades. Net worth and unrealized/realized gain at a glance, per-ticker average-cost-basis tracking with live price updates, an allocation donut chart, dividend logging, and best/worst performer cards. Same stack as Trading Journal, different discipline: this one tracks what you hold, not what you traded.
+`Python` `Streamlit` `Pandas` `Plotly`
+
+### [Peony Nails · Click for Live Website](https://peonynails.store)
+Freelance site build for a nail studio, live on a custom domain with real DNS setup, not a template drop-in. Bilingual EN/TR content throughout, per-product detail pages with a photo gallery and lightbox, a custom coverflow carousel for the nail-art gallery, and a Formspree-backed contact form. Real photos, a real service menu, and real client testimonials, sourced directly from the studio owner rather than placeholder content.
+`HTML` `CSS` `JavaScript` `Netlify` `Formspree`
+
+### LingoTrack: Language-Learning Time Tracker · Private
+Personal full-stack tool for tracking language study time. Live start/stop session timer that survives a page reload, per-language weekly goal progress bars, a GitHub-style activity heatmap, and a stats dashboard with daily and range-based breakdowns by language and activity type.
+`Next.js` `TypeScript` `Prisma` `SQLite` `Tailwind`
+
 ### [İzmir Acil: Emergency Service Finder · Click for Live Website](https://izmir-acil.streamlit.app/)
 A web app that helps people find over 4,600 verified emergency services in İzmir. Uses an "Open Now" feature that checks current local time against store hours, and sorts results by distance using browser GPS. Built a mobile-friendly map interface with quick buttons for WhatsApp, calling, and Google Maps directions.
 `Python` `Streamlit` `SQLite` `Folium` `Geopy`
@@ -94,7 +106,7 @@ Analyzed 540k transactions for a UK gift retailer. Handled EDA, Pareto analysis,
 
 **Data:** Pandas · Matplotlib · Seaborn · EDA · Statistical Analysis · Geospatial Analysis (Folium/Geopy)
 
-**Web:** Canvas API · SVG · Streamlit · Gradio · GitHub Pages
+**Web:** Next.js · TypeScript · Prisma · Canvas API · SVG · Streamlit · Gradio · GitHub Pages · Netlify · i18n
 
 **Finance:** Algorithmic Trading · Backtesting · Order Flow · Volume Profile · CVD · Market Profile · Liquidity Analysis · MetaTrader 5 · TradingView
 
