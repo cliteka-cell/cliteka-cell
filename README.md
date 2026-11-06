@@ -27,7 +27,7 @@ Topic-based question generator for the Turkish ALES exam. It pulls from a databa
 `Python` `Streamlit` `Gemini 2.5 Flash` `Pandas`
 
 ### [AI Investor: Local LLM Research System](https://cliteka-cell.github.io/ai-investor-dashboard/) · [Writeup](https://github.com/cliteka-cell/ai-investor-writeup)
-Self-hosted investment research system running entirely on local hardware, no external LLM API. Research only by design: it never places a trade, and the broker API keys are deliberately left empty. A three-layer screener runs across large-cap, Russell 2000, and crypto tracks: a quantitative momentum pass with no LLM, then a tool-calling web-search gather (Qwen via a self-hosted SearXNG), then a deep thesis and pre-mortem pass (DeepSeek R1 32B). 18 scheduled jobs keep it running unattended, including a living paper portfolio with stop-loss exits, position caps and inverse-volatility sizing, thesis drift detection against each position's original thesis, and a data quality canary that validates the shape of every external API response rather than just its status code. The system grades itself: a calibration job measures forward returns per conviction tier against a track-appropriate passive benchmark (SPY / IWM / BTC), which is how it surfaced that its own high-conviction large-cap tier was trailing SPY by 3.1% alpha while the crypto medium tier beat BTC by 1.6%. A public dashboard (linked above) republishes this same data daily: the briefing, macro regime, screener conviction tiers, and the calibration numbers themselves, unedited.
+Self-hosted investment research system running entirely on local hardware, no external LLM API. Research only by design: it never places a trade, and the broker API keys are deliberately left empty. A three-layer screener runs across large-cap, Russell 2000, and crypto tracks: a quantitative momentum pass with no LLM, then a tool-calling web-search gather (Qwen via a self-hosted SearXNG), then a deep thesis and pre-mortem pass (DeepSeek R1 32B). 18 scheduled jobs kept it running unattended, including a living paper portfolio with stop-loss exits, position caps and inverse-volatility sizing, thesis drift detection against each position's original thesis, and a data quality canary that validates the shape of every external API response rather than just its status code. The system grades itself: a calibration job measures forward returns per conviction tier against a track-appropriate passive benchmark (SPY / IWM / BTC). Its last calibration (September 2026, nine weekly archives, so a few months of picks and not a verdict) was not flattering: the high- and medium-conviction tiers of both stock tracks all trailed their benchmarks, for example large-cap high conviction by 6.0 points of alpha over 19 picks and small-cap medium by 8.4 points over 62, while crypto medium conviction roughly matched BTC (+0.7 points over 23). Reported as found. The system has been paused since September 2026, and the public dashboard (linked above) is a snapshot of its last run: the briefing, macro regime, screener conviction tiers, and those calibration numbers, unedited.
 `Python` `Ollama` `DeepSeek R1 32B` `Qwen` `Local LLM` `Docker` `SearXNG` `yfinance` `SEC EDGAR`
 
 ### [ARMAS: Algorithmic S&P EA](https://github.com/cliteka-cell/ARMAS_Project_Full)
@@ -78,9 +78,9 @@ The sibling app to Trading Journal, rebuilt around long-term holdings instead of
 Freelance site build for a nail studio, live on a custom domain with real DNS setup, not a template drop-in. Bilingual EN/TR content throughout, per-product detail pages with a photo gallery and lightbox, a custom coverflow carousel for the nail-art gallery, and a Formspree-backed contact form. Real photos, a real service menu, and real client testimonials, sourced directly from the studio owner rather than placeholder content.
 `HTML` `CSS` `JavaScript` `Netlify` `Formspree`
 
-### LingoTrack: Language-Learning Time Tracker · Private
-Personal full-stack tool for tracking language study time. Live start/stop session timer that survives a page reload, per-language weekly goal progress bars, a GitHub-style activity heatmap, and a stats dashboard with daily and range-based breakdowns by language and activity type.
-`Next.js` `TypeScript` `Prisma` `SQLite` `Tailwind`
+### [Voynich: A Private Study Room That Lives on Your Computer](https://cliteka-cell.github.io/voynich-releases/) · [Download](https://github.com/cliteka-cell/voynich-releases)
+A study tracker I started as a small language-learning timer, then merged with a second tracker into one app and shipped as a real product. Everything a student or self-learner keeps in five places, in one program that runs on your own PC and opens in your browser: a session timer and log, weekly and long-term goals with a pace to finish on time, several separate rooms (a language, a degree, a hobby), notes that link to each other into a graph, a library with ISBN and DOI lookup and BibTeX and RIS citations, a PDF and EPUB reader with highlights, flashcards, and an optional AI tab that uses a local Ollama model or your own key and never a hosted one. No account, no cloud, daily backups with a preview before restoring, and optional peer-to-peer study circles that need no server. Ships as a Windows installer and a Mac disk image that update themselves with signed updates, with a public site, a getting-started guide, a full manual and terms. Free to use, not open source.
+`Next.js` `TypeScript` `Prisma` `SQLite` `Local-First` `Desktop Packaging`
 
 ### [İzmir Acil: Emergency Service Finder · Click for Live Website](https://izmir-acil.streamlit.app/)
 A web app that helps people find over 4,600 verified emergency services in İzmir. Uses an "Open Now" feature that checks current local time against store hours, and sorts results by distance using browser GPS. Built a mobile-friendly map interface with quick buttons for WhatsApp, calling, and Google Maps directions.
@@ -98,7 +98,7 @@ Analyzed 540k transactions for a UK gift retailer. Handled EDA, Pareto analysis,
 
 ## Skills
 
-**Languages:** Python · SQL · JavaScript · HTML · CSS · C# · Pine Script v6 · R
+**Languages:** Python · SQL · JavaScript · TypeScript · HTML · CSS · C# · Pine Script v6 · R
 
 **ML & NLP:** Scikit-learn · XGBoost · Feature Engineering · Model Evaluation · Fine-tuning Transformers (HuggingFace) · NER · Token Classification · Cross-lingual & Zero-Shot Transfer · Contrastive Learning (InfoNCE) · Ablation & Multi-Seed Study Design · Reinforcement Learning (PPO) · LLM Evaluation
 
@@ -106,7 +106,7 @@ Analyzed 540k transactions for a UK gift retailer. Handled EDA, Pareto analysis,
 
 **Data:** Pandas · Matplotlib · Seaborn · EDA · Statistical Analysis · Geospatial Analysis (Folium/Geopy)
 
-**Web:** Next.js · TypeScript · Prisma · Canvas API · SVG · Streamlit · Gradio · GitHub Pages · Netlify · i18n
+**Web:** Next.js · TypeScript · Prisma · Canvas API · SVG · Streamlit · Gradio · GitHub Pages · Netlify · i18n · Desktop Packaging & Signed Auto-Updates
 
 **Finance:** Algorithmic Trading · Backtesting · Order Flow · Volume Profile · CVD · Market Profile · Liquidity Analysis · MetaTrader 5 · TradingView
 
