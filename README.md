@@ -1,6 +1,6 @@
 # Hi, I'm Kerem
 
-Linguistics graduate from Boğaziçi University, currently working as an AI/LLM evaluator at Yandex with a focus on NLP and machine learning engineering.
+Linguistics graduate from Boğaziçi University, previously an AI/LLM evaluator at Yandex, with a focus on NLP and machine learning engineering.
 
 🌐 **Portfolio:** [kerem.confluencearray.com](https://kerem.confluencearray.com)
 
